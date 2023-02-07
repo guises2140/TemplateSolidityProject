@@ -9,7 +9,7 @@ contract Artwork is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private tokenId;
 
-    constructor() ERC721("Work of Art", "WoA") {}
+    constructor() ERC721("Artwork", "AW") {}
 
     function mint(string memory tokenURI) public returns (uint256) {
         tokenId.increment();
